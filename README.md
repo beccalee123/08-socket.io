@@ -6,8 +6,9 @@
 ### Author: Becca Lee
 
 ### Links and Resources
+![Build Status](https://www.travis-ci.com/beccalee123/08-socket.io.svg?branch=master)
 * [repo](https://github.com/beccalee123/08-socket.io)
-* [travis](http://xyz.com)
+* [travis](https://www.travis-ci.com/beccalee123/08-socket.io)
 
 ### Modules
 #### `modulename.js`
