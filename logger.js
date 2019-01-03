@@ -10,18 +10,39 @@ socket.on('read', alterFile);
 socket.on('save', saveCallback);
 socket.on('error', errorCallback);
 
+/**
+ *
+ *
+ * @param {*} file
+ */
 function saveCallback(file){
   console.log('file-saved');
 }
 
+/**
+ *
+ *
+ * @param {*} file
+ */
 function errorCallback(file){
   console.log('error-logged');
 }
 
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
+/**
+ *
+ *
+ * @param {*} buffer
+ * @returns
+ */
 const toUpper = (buffer) => { return Buffer.from(buffer.toString().toUpperCase()); };
 
+/**
+ *
+ *
+ * @param {*} file
+ */
 function alterFile(file) {
   console.log('alterFile called');
   readFile(file)
